@@ -54,9 +54,9 @@ constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int = 0, defSty
 
     private var leftDotScale = 1f
         set(value) {
-        field = value
-        invalidate()
-    }
+            field = value
+            invalidate()
+        }
 
     private var topDotScale = 1f
         set(value) {
@@ -78,9 +78,9 @@ constructor(context: Context, attrs: AttributeSet, defStyleAttr: Int = 0, defSty
 
     private var rotationAngle = 0f
         set(value) {
-        field = value
-        invalidate()
-    }
+            field = value
+            invalidate()
+        }
 
     private val offset = radius / 2
     /*offset + crossLeft + crossRight + space + dotLeft + space + dotRight + offset*/

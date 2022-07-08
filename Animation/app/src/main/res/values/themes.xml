@@ -14,10 +14,43 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <attr name="color" format="color|reference" />
+    <attr name="scale" format="float" />
+    <attr name="animationDuration" format="integer" />
+    <attr name="angleSpeed" format="integer" />
+
     <declare-styleable name="Cross">
-        <attr name="color" format="color|reference" />
-        <attr name="scale" format="float" />
-        <attr name="animationDuration" format="integer" />
+        <attr name="color" />
+        <attr name="scale" />
+        <attr name="animationDuration" />
         <attr name="animationDelay" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="PlanetProgress">
+        <attr name="color" />
+        <attr name="scale" />
+        <attr name="angleSpeed" />
+    </declare-styleable>
+
+    <declare-styleable name="PulsatingDot">
+        <attr name="color" />
+        <attr name="maxScale" format="float" />
+        <attr name="animationDuration" />
+    </declare-styleable>
+
+    <declare-styleable name="PlanetProgressPro">
+        <attr name="color" />
+        <attr name="scale" />
+        <attr name="radius" format="float" />
+        <attr name="rotationDirectionClockwise" format="boolean" />
+        <attr name="rotationSpeedRandom" format="boolean" />
+        <attr name="orbitCount" format="integer" />
+        <attr name="angleSpeed" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressBar">
+        <attr name="color" />
+        <attr name="width" format="float" />
+        <attr name="speed" format="float" />
     </declare-styleable>
 </resources>

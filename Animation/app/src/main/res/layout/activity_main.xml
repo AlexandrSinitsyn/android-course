@@ -6,7 +6,51 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
     android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <alex.sin.animations.view.PlanetProgress
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="#DD00DD"
+            app:scale="30"
+            app:angleSpeed="10" />
+
+        <alex.sin.animations.view.PulsatingDot
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="#DD8800"
+            app:maxScale="300"
+            app:animationDuration="1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <alex.sin.animations.view.PlanetProgressPro
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="#DD0000"
+            app:radius="20"
+            app:scale="0.3"
+            app:orbitCount="7"
+            app:rotationDirectionClockwise="false"
+            app:rotationSpeedRandom="true" />
+
+        <alex.sin.animations.view.PlanetProgressPro
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:color="#00DD00"
+            app:radius="10"
+            app:scale="0.02"
+            app:orbitCount="100"
+            app:angleSpeed="20" />
+    </LinearLayout>
 
     <alex.sin.animations.view.Cross
         android:layout_width="wrap_content"
@@ -17,6 +61,15 @@
         app:animationDelay="300"
         app:animationDuration="800" />
 
+    <alex.sin.animations.view.Cross
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:color="#DDDD00"
+        app:scale="1"
+        app:animationDelay="600"
+        app:animationDuration="1600" />
+
     <TextView
         android:id="@+id/loading"
         android:layout_width="wrap_content"
@@ -26,5 +79,10 @@
         android:text="@string/loading"
         android:textColor="@color/colorLoading"
         android:textSize="40sp" />
+
+    <alex.sin.animations.view.ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:speed="10" />
 
 </LinearLayout>
