@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/first_tab_navigation"
+        android:title="@string/first_tab"
+        android:icon="@mipmap/ic_launcher"/>
+    <item
+        android:id="@+id/second_tab_navigation"
+        android:title="@string/second_tab"
+        android:icon="@mipmap/ic_launcher"/>
+    <item
+        android:id="@+id/third_tab_navigation"
+        android:title="@string/third_tab"
+        android:icon="@mipmap/ic_launcher"/>
+</menu>

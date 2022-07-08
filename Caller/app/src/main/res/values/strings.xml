@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Caller</string>
+    <string name="defaultNumber">+7 (987) 654–32–10</string>
+    <string name="defaultName">Hello, World!</string>
+    <string name="calling">Calling</string>
+    <string name="sendingSMS">SMS</string>
+    <string name="defaultSMSText">Hello! How are you?</string>
+    <string name="call">Call</string>
+    <string name="sendMessage">Send message</string>
+    <string name="decline">Decline</string>
+    <string name="no_permission_has_been_given">No permission has been given</string>
+
+    <plurals name="contacts">
+        <item quantity="one">Найден %d контакт</item>
+        <item quantity="two">Найдено %d контакта</item>
+        <item quantity="few">Найдено %d контакта</item>
+        <item quantity="other">Найдено %d контактов</item>
+    </plurals>
+</resources>

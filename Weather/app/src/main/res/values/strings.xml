@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="header">Weather</string>
+    <string name="nightModeButton">Night mode</string>
+    <string name="temperature">32&#176;C</string>
+    <string name="today_info">SPb, Russia\nCloudy</string>
+    <string name="wind_info">78</string>
+    <string name="pressure_info">52</string>
+    <string name="rainfall_info">8,9</string>
+    <string name="wind">Wind</string>
+    <string name="pressure">Pressure</string>
+    <string name="rainfall">Rainfall</string>
+    <string name="monday_info">33</string>
+    <string name="tuesday_info">31</string>
+    <string name="wednesday_info">32</string>
+    <string name="thursday_info">32</string>
+    <string name="friday_info">31</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+</resources>

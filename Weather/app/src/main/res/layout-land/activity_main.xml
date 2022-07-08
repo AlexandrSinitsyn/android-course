@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/GridCell"
+
+        android:text="@string/header"
+        android:padding="10dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/clouds"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/nightModeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nightModeButton"
+        android:textSize="11sp"
+        android:textAlignment="center"
+        android:padding="10dp"
+        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/clouds"
+        style="@style/mainImage"
+        app:layout_constraintBottom_toTopOf="@id/weather"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:srcCompat="@drawable/weather_preview" />
+
+    <LinearLayout
+        android:id="@+id/weather"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toTopOf="@id/week"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clouds">
+
+        <TextView
+            android:id="@+id/temperature"
+            style="@style/GridCell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:paddingTop="5dp"
+            android:text="@string/temperature" />
+
+        <TextView
+            android:id="@+id/today_info"
+            style="@style/GridCellSubscript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:paddingBottom="10dp"
+            android:text="@string/today_info" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/wind_field"
+        style="@style/TodayInfo"
+
+        app:layout_constraintBottom_toTopOf="@+id/pressure_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/header">
+
+        <TextView
+            android:id="@+id/wind_info"
+            style="@style/GridCell"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/wind_info" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/wind"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pressure_field"
+        style="@style/TodayInfo"
+
+        app:layout_constraintBottom_toTopOf="@+id/rainfall_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/wind_field">
+
+        <TextView
+            android:id="@+id/pressure_info"
+            style="@style/GridCell"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/pressure_info" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/pressure" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rainfall_field"
+        style="@style/TodayInfo"
+
+        app:layout_constraintBottom_toTopOf="@+id/week"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@id/pressure_field">
+
+        <TextView
+            android:id="@+id/rainfall_info"
+            style="@style/GridCell"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/rainfall_info" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+
+            android:text="@string/rainfall" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/week"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintVertical_weight="0.3"
+        
+        android:orientation="horizontal"
+        android:columnCount="5"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toBottomOf="@id/rainfall_field"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" >
+
+        <TextView
+            android:id="@+id/monday_info"
+            style="@style/GridCell"
+            android:text="@string/monday_info" />
+
+        <TextView
+            android:id="@+id/tuesday_info"
+            style="@style/GridCell"
+            android:text="@string/tuesday_info" />
+
+        <TextView
+            android:id="@+id/wednesday_info"
+            style="@style/GridCell"
+            android:text="@string/wednesday_info" />
+
+        <TextView
+            android:id="@+id/thursday_info"
+            style="@style/GridCell"
+            android:text="@string/thursday_info" />
+
+        <TextView
+            android:id="@+id/friday_info"
+            style="@style/GridCell"
+            android:text="@string/friday_info" />
+
+        <ImageView
+            android:id="@+id/monday_img"
+            style="@style/GridCell"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/ic_cloud" />
+
+        <ImageView
+            android:id="@+id/tuesday_img"
+            style="@style/GridCell"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/ic_sun" />
+
+        <ImageView
+            android:id="@+id/wednesday_img"
+            style="@style/GridCell"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/ic_half_sun" />
+
+        <ImageView
+            android:id="@+id/thursday_img"
+            style="@style/GridCell"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/ic_cloud" />
+
+        <ImageView
+            android:id="@+id/friday_img"
+            style="@style/GridCell"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_rain" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:text="@string/monday" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:text="@string/tuesday" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:text="@string/wednesday" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:text="@string/thursday" />
+
+        <TextView
+            style="@style/GridCellSubscript"
+            android:text="@string/friday" />
+    </GridLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

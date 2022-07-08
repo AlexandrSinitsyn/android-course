@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Photos</string>
+    <string name="defaultUrl">URL</string>
+    <string name="downloadedImage">DownloadedImage</string>
+    <string name="no_permission_has_been_given">No permission has been given</string>
+    <string name="find_some_new_photos">find some new photos</string>
+    <string name="defaultName">Default Name</string>
+</resources>

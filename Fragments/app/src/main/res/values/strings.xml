@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fragments</string>
+
+    <string name="first_tab">First tab</string>
+    <string name="second_tab">Second tab</string>
+    <string name="third_tab">Third tab</string>
+
+    <string name="default_backstack">Default backstack</string>
+
+    <string name="next">next</string>
+    <string name="prev">previous</string>
+</resources>

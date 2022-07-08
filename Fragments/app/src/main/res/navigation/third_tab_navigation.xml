@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/third_tab_navigation"
+    app:startDestination="@id/ThirdFragment">
+
+    <fragment
+        android:id="@+id/ThirdFragment"
+        android:name="alex.sin.fragments.fragments.ThirdFragment"
+        android:label="ThirdTab"
+        tools:layout="@layout/tab_navigation">
+
+        <argument
+            android:name="backstackCount"
+            app:argType="integer"
+            android:defaultValue="1" />
+
+        <action
+            android:id="@+id/action_next"
+            app:destination="@id/ThirdFragment" />
+        <action
+            android:id="@+id/action_prev"
+            app:destination="@id/ThirdFragment" />
+    </fragment>
+</navigation>

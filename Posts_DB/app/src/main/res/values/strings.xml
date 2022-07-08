@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Posts</string>
+    <string name="defaultPostTitle">Default post title</string>
+    <string name="defaultPostBody">Default post body</string>
+    <string name="post">post</string>
+    <string name="delete">Delete</string>
+    <string name="create_post">create Post</string>
+    <string name="something_went_wrong">Something went wrong\n\nReload the app, please</string>
+    <string name="default_exception">Default exception</string>
+    <string name="refresh">Refresh</string>
+</resources>
