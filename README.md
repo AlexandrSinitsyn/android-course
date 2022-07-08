@@ -1,4 +1,4 @@
-# android-course
+# Курс «Мобильная разработка на Android»
 
 ### 1. [Калькулятор](https://github.com/AlexandrSinitsyn/android-course/tree/main/Calculator)
 
